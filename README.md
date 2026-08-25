@@ -1,5 +1,16 @@
 # DIKWP AgentTrace OS
 
+[English documentation](#why-this-matters) · [中文速览](#中文速览) · [Download the release package](./dikwp_agenttrace_os_open_source_app.zip)
+
+> **Release layout / 发布结构** — The runnable source is distributed in `dikwp_agenttrace_os_open_source_app.zip`. Download and extract the package first, enter the extracted application directory, and then run the commands in **Quick start**. / 可运行源码位于上述 ZIP 发布包中；请先下载并解压，进入解压后的应用目录，再执行下方命令。
+
+## 中文速览
+
+- **它解决什么问题**：把一次 AI Agent 运行转换为防篡改的 DIKWP 语义追踪账本，记录观察、决策、工具调用、记忆写入、证据与风险事件。
+- **适合谁**：Agent 开发者、AI 安全与治理团队、模型评测人员，以及需要事故回放和证据保全的研究者。
+- **如何开始**：下载并解压发布包，在应用目录中完成本地安装，然后使用示例运行生成时间线、风险事件、证据账本与回放包。
+- **使用边界**：本项目用于经过授权的 AI 系统审计，不用于隐蔽监控人员；实际部署应包含告知、目的限制、脱敏、访问控制、保留期限和人工复核。
+
 Open-source AI Agent black-box recorder, semantic trace ledger, and incident replay toolkit.
 
 DIKWP AgentTrace OS turns an AI agent run into a tamper-evident semantic trace ledger. It helps teams answer:
@@ -57,15 +68,3 @@ The demo command generates:
 - `agent_trace_report.json`
 - `trace_timeline.csv`
 - `risk_events.csv`
-- `dikwp_event_ledger.json`
-- `replay_bundle.json`
-- `otel_style_spans.json`
-- `incident_recommendations.md`
-
-## Design principle
-
-DIKWP AgentTrace OS is not a surveillance tool for covertly monitoring people. It is a governance tool for auditable AI systems. It should be deployed with notice, purpose limitation, redaction, access control, retention limits, and human review.
-
-## Attribution
-
-DIKWP is attributed to Yucong Duan / Duan DIKWP Lab in this open-source prototype. See `NOTICE` and `CITATION.cff`.
